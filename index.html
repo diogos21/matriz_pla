@@ -10,144 +10,144 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
-    function calcular() {
-    
-    //MATRIZ A 
+        function calcular() {
 
-    var m1aj11 = parseInt(document.getElementById("m1aj11").value)
-    var m1aj12 = parseInt(document.getElementById("m1aj12").value)
-    var m1aj13 = parseInt(document.getElementById("m1aj13").value)
+            //MATRIZ A 
 
-    //linha2
-    var m1aj21 = parseInt(document.getElementById("m1aj21").value)
-    var m1aj22 = parseInt(document.getElementById("m1aj22").value)
-    var m1aj23 = parseInt(document.getElementById("m1aj23").value)
+            var m1aj11 = parseInt(document.getElementById("m1aj11").value)
+            var m1aj12 = parseInt(document.getElementById("m1aj12").value)
+            var m1aj13 = parseInt(document.getElementById("m1aj13").value)
 
-
-    var m1aj31 = parseInt(document.getElementById("m1aj31").value)
-    var m1aj32 = parseInt(document.getElementById("m1aj32").value)
-    var m1aj33 = parseInt(document.getElementById("m1aj33").value)
+            //linha2
+            var m1aj21 = parseInt(document.getElementById("m1aj21").value)
+            var m1aj22 = parseInt(document.getElementById("m1aj22").value)
+            var m1aj23 = parseInt(document.getElementById("m1aj23").value)
 
 
-
-    //MATRIZ B
-
-    var m2aj11 = parseInt(document.getElementById("m2aj11").value)
-    var m2aj12 = parseInt(document.getElementById("m2aj12").value)
-    var m2aj13 = parseInt(document.getElementById("m2aj13").value)
-
-    var m2aj21 = parseInt(document.getElementById("m2aj21").value)
-    var m2aj22 = parseInt(document.getElementById("m2aj22").value)
-    var m2aj23 = parseInt(document.getElementById("m2aj23").value)
-
-    var m2aj31 = parseInt(document.getElementById("m2aj31").value)
-    var m2aj32 = parseInt(document.getElementById("m2aj32").value)
-    var m2aj33 = parseInt(document.getElementById("m2aj33").value)
+            var m1aj31 = parseInt(document.getElementById("m1aj31").value)
+            var m1aj32 = parseInt(document.getElementById("m1aj32").value)
+            var m1aj33 = parseInt(document.getElementById("m1aj33").value)
 
 
-    var raj11 = 0;
-    var raj12 = 0;
-    var raj13 = 0;
 
-    var raj21 = 0;
-    var raj22 = 0;
-    var raj23 = 0;
+            //MATRIZ B
 
-    var raj31 = 0;
-    var raj32 = 0;
-    var raj33 = 0;
+            var m2aj11 = parseInt(document.getElementById("m2aj11").value)
+            var m2aj12 = parseInt(document.getElementById("m2aj12").value)
+            var m2aj13 = parseInt(document.getElementById("m2aj13").value)
 
-    if (document.getElementById("soma").checked) {
-        //linha1
-        raj11 = m1aj11 + m2aj11;
-        raj12 = m1aj12 + m2aj12;
-        raj13 = m1aj13 + m2aj13;
+            var m2aj21 = parseInt(document.getElementById("m2aj21").value)
+            var m2aj22 = parseInt(document.getElementById("m2aj22").value)
+            var m2aj23 = parseInt(document.getElementById("m2aj23").value)
 
-        //linha2
-        raj21 = m1aj21 + m2aj21;
-        raj22 = m1aj22 + m2aj22;
-        raj23 = m1aj23 + m2aj23;
-
-        //linha3
-        raj31 = m1aj31 + m2aj31;
-        raj32 = m1aj32 + m2aj32;
-        raj33 = m1aj33 + m2aj33;
-
-        document.getElementById("raj11").value = raj11
-        document.getElementById("raj12").value = raj12
-        document.getElementById("raj13").value = raj13
-
-        document.getElementById("raj21").value = raj21
-        document.getElementById("raj22").value = raj22
-        document.getElementById("raj23").value = raj23
-
-        document.getElementById("raj31").value = raj31
-        document.getElementById("raj32").value = raj32
-        document.getElementById("raj33").value = raj33
-    }
-
-    else if (document.getElementById("sub").checked) {
-
-        raj11 = m1aj11 - m2aj11;
-        raj12 = m1aj12 - m2aj12;
-        raj13 = m1aj13 - m2aj13;
-
-        raj21 = m1aj21 - m2aj21;
-        raj22 = m1aj22 - m2aj22;
-        raj23 = m1aj23 - m2aj23;
-
-        raj31 = m1aj31 - m2aj31;
-        raj32 = m1aj32 - m2aj32;
-        raj33 = m1aj33 - m2aj33;
-
-        document.getElementById("raj11").value = raj11
-        document.getElementById("raj12").value = raj12
-        document.getElementById("raj13").value = raj13
-
-        document.getElementById("raj21").value = raj21
-        document.getElementById("raj22").value = raj22
-        document.getElementById("raj23").value = raj23
-
-        document.getElementById("raj31").value = raj31
-        document.getElementById("raj32").value = raj32
-        document.getElementById("raj33").value = raj33
-
-        console.log(raj11)
-        console.log(m1aj11, m2aj11)
-    }
-
-    else if (document.getElementById("multi").checked) {
+            var m2aj31 = parseInt(document.getElementById("m2aj31").value)
+            var m2aj32 = parseInt(document.getElementById("m2aj32").value)
+            var m2aj33 = parseInt(document.getElementById("m2aj33").value)
 
 
-        raj11 = (m1aj11 * m2aj11) + (m1aj12 * m2aj21) + (m1aj13 * m2aj31);
-        raj12 = (m1aj21 * m2aj11) + (m1aj22 * m2aj21) + (m1aj23 * m2aj31)
-        raj13 = (m1aj31 * m2aj11) + (m1aj32 * m2aj21) + (m1aj33 * m2aj31)
+            var raj11 = 0;
+            var raj12 = 0;
+            var raj13 = 0;
+
+            var raj21 = 0;
+            var raj22 = 0;
+            var raj23 = 0;
+
+            var raj31 = 0;
+            var raj32 = 0;
+            var raj33 = 0;
+
+            if (document.getElementById("soma").checked) {
+                //linha1
+                raj11 = m1aj11 + m2aj11;
+                raj12 = m1aj12 + m2aj12;
+                raj13 = m1aj13 + m2aj13;
+
+                //linha2
+                raj21 = m1aj21 + m2aj21;
+                raj22 = m1aj22 + m2aj22;
+                raj23 = m1aj23 + m2aj23;
+
+                //linha3
+                raj31 = m1aj31 + m2aj31;
+                raj32 = m1aj32 + m2aj32;
+                raj33 = m1aj33 + m2aj33;
+
+                document.getElementById("raj11").value = raj11
+                document.getElementById("raj12").value = raj12
+                document.getElementById("raj13").value = raj13
+
+                document.getElementById("raj21").value = raj21
+                document.getElementById("raj22").value = raj22
+                document.getElementById("raj23").value = raj23
+
+                document.getElementById("raj31").value = raj31
+                document.getElementById("raj32").value = raj32
+                document.getElementById("raj33").value = raj33
+            }
+
+            else if (document.getElementById("sub").checked) {
+
+                raj11 = m1aj11 - m2aj11;
+                raj12 = m1aj12 - m2aj12;
+                raj13 = m1aj13 - m2aj13;
+
+                raj21 = m1aj21 - m2aj21;
+                raj22 = m1aj22 - m2aj22;
+                raj23 = m1aj23 - m2aj23;
+
+                raj31 = m1aj31 - m2aj31;
+                raj32 = m1aj32 - m2aj32;
+                raj33 = m1aj33 - m2aj33;
+
+                document.getElementById("raj11").value = raj11
+                document.getElementById("raj12").value = raj12
+                document.getElementById("raj13").value = raj13
+
+                document.getElementById("raj21").value = raj21
+                document.getElementById("raj22").value = raj22
+                document.getElementById("raj23").value = raj23
+
+                document.getElementById("raj31").value = raj31
+                document.getElementById("raj32").value = raj32
+                document.getElementById("raj33").value = raj33
+
+                console.log(raj11)
+                console.log(m1aj11, m2aj11)
+            }
+
+            else if (document.getElementById("multi").checked) {
 
 
-        raj21 = (m1aj11 * m2aj12) + (m1aj12 * m2aj22) + (m1aj13 * m2aj32)
-        raj22 = (m1aj21 * m2aj12) + (m1aj22 * m2aj22) + (m1aj23 * m2aj32)
-        raj23 = (m1aj31 * m2aj12) + (m1aj32 * m2aj22) + (m1aj33 * m2aj32)
+                raj11 = (m1aj11 * m2aj11) + (m1aj12 * m2aj21) + (m1aj13 * m2aj31);
+                raj12 = (m1aj21 * m2aj11) + (m1aj22 * m2aj21) + (m1aj23 * m2aj31)
+                raj13 = (m1aj31 * m2aj11) + (m1aj32 * m2aj21) + (m1aj33 * m2aj31)
 
 
-        raj31 = (m1aj11 * m2aj13) + (m1aj12 * m2aj23) + (m1aj13 * m2aj33)
-        raj32 = (m1aj21 * m2aj13) + (m1aj22 * m2aj23) + (m1aj23 * m2aj33)
-        raj33 = (m1aj31 * m2aj13) + (m1aj32 * m2aj23) + (m1aj33 * m2aj33)
+                raj21 = (m1aj11 * m2aj12) + (m1aj12 * m2aj22) + (m1aj13 * m2aj32)
+                raj22 = (m1aj21 * m2aj12) + (m1aj22 * m2aj22) + (m1aj23 * m2aj32)
+                raj23 = (m1aj31 * m2aj12) + (m1aj32 * m2aj22) + (m1aj33 * m2aj32)
 
-        document.getElementById("raj11").value = raj11
-        document.getElementById("raj21").value = raj12
-        document.getElementById("raj31").value = raj13
 
-        document.getElementById("raj12").value = raj21
-        document.getElementById("raj22").value = raj22
-        document.getElementById("raj32").value = raj23
+                raj31 = (m1aj11 * m2aj13) + (m1aj12 * m2aj23) + (m1aj13 * m2aj33)
+                raj32 = (m1aj21 * m2aj13) + (m1aj22 * m2aj23) + (m1aj23 * m2aj33)
+                raj33 = (m1aj31 * m2aj13) + (m1aj32 * m2aj23) + (m1aj33 * m2aj33)
 
-        document.getElementById("raj13").value = raj31
-        document.getElementById("raj23").value = raj32
-        document.getElementById("raj33").value = raj33
+                document.getElementById("raj11").value = raj11
+                document.getElementById("raj21").value = raj12
+                document.getElementById("raj31").value = raj13
 
-    }
+                document.getElementById("raj12").value = raj21
+                document.getElementById("raj22").value = raj22
+                document.getElementById("raj32").value = raj23
 
-}
+                document.getElementById("raj13").value = raj31
+                document.getElementById("raj23").value = raj32
+                document.getElementById("raj33").value = raj33
+
+            }
+
+        }
     </script>
 
 
@@ -248,4 +248,5 @@
 
 
 </body>
+
 </html>
